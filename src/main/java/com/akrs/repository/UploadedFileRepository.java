@@ -1,4 +1,5 @@
 import org.springframework.data.jpa.repository.JpaRepository;
+import com.akrs.model.UploadedFile;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
