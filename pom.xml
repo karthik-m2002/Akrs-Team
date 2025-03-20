@@ -6,7 +6,7 @@
 
     <groupId>com.akrs</groupId>
     <artifactId>akrs-team</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.${env.BUILD_NUMBER}</version>
     <packaging>war</packaging>
 
     <properties>
@@ -61,7 +61,7 @@
     </dependencies>
 
     <build>
-        <finalName>akrs-team</finalName>
+        <finalName>akrs-team-${project.version}</finalName>
         <plugins>
             <!-- Spring Boot Maven Plugin -->
             <plugin>
