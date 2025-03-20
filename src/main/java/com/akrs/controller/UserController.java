@@ -18,6 +18,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    // New method to redirect to index.html
+    @GetMapping("/")
+    public String home() {
+        return "redirect:/views/index.html";
+    }
+
     @GetMapping("/all")
     public ResponseEntity<List<User>> getAllUsers() {
         List<User> users = userService.getAllUsers();
